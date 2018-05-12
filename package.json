@@ -20,7 +20,8 @@
     "test": "npm run eslint && npm run build && npm run test-cov && npm run test-browser",
     "test-spec": "mocha spec/*.spec.js -R spec",
     "test-cov": "nyc npm run test-spec",
-    "test-browser": "npm run bundle-test && scripts/prepare-tests && karma start --single-run --browsers PhantomJS"
+    "test-browser": "npm run bundle-test && scripts/prepare-tests && karma start --single-run --browsers PhantomJS",
+    "install": "yarn run build"
   },
   "repository": {
     "type": "git",
