@@ -82,7 +82,7 @@ module.exports = {
     ru: 'не найдена схема {{=e.params.ref}}',
     sk: 'referenciu {{=e.params.ref}} sa nepodarilo nájsť',
     sv: 'kan inte lösa referens {{=e.params.ref}}',
-    th: 'ไม่สามารถหา reference {{=e.params.ref}}',
+    th: 'ไม่สามารถเข้าถึง {{=e.params.ref}}',
     zh: '无法找到引用{{=e.params.ref}}',
     'zh-TW': '無法找到引用{{=e.params.ref}}'
   },
@@ -127,7 +127,7 @@ module.exports = {
     ru: 'не должно иметь дополнительные поля',
     sk: 'nemôže obsahovať ďalšie položky',
     sv: 'borde inte ha fler egenskaper',
-    th: 'ไม่ควรมี property เกินที่กำหนดไว้',
+    th: 'ไม่ควรเลือกเกินกว่าที่กำหนดไว้',
     zh: '不允许有额外的属性',
     'zh-TW': '不可以有額外的屬性'
     // en: 'Additional properties not allowed',
@@ -151,7 +151,7 @@ module.exports = {
     ru: 'должно соответствовать одной их схем в "anyOf"',
     sk: 'musí splňovať aspoň jednu zo schém v "anyOf"',
     sv: 'borde matcha något schema i "anyOf"',
-    th: 'ควรมี schema บางอย่างตรงกับที่กำหนดไว้ใน "anyOf"',
+    th: 'ควรมีบางอย่างตรงกับที่กำหนดไว้ "อย่างใดอย่างหนึ่ง"',
     zh: '数据应为 anyOf 所指定的其中一个',
     'zh-TW': '不符合 anyOf 指定的模式'
     // en: 'Data does not match any schemas from "anyOf"',
@@ -178,7 +178,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь пол{{? n==1 }}е{{??}}я{{?}} {{=e.params.deps}}, когда присутствует поле {{=e.params.property}}',
     sk: '{{#def.n}} musí obsahovať polož{{#def.propPlural}}: {{=e.params.deps}}, ak obsahuje {{=e.params.property}}',
     sv: '{{#def.n}}borde ha egenskap{{#def.propPlural}} {{=e.params.deps}} när egenskap {{=e.params.property}} finns tillgängligt',
-    th: '{{#def.n}}เมื่อมี property {{=e.params.property}} แล้วก็ควรมี property {{=e.params.deps}} ด้วย',
+    th: '{{#def.n}}เมื่อมี {{=e.params.property}} แล้วก็ควรมี {{=e.params.deps}} ด้วย',
     zh: '{{#def.n}}应当拥有属性{{=e.params.property}}的依赖属性{{=e.params.deps}}',
     'zh-TW': '{{#def.n}}應該要有屬性{{=e.params.property}}的依賴屬性{{=e.params.deps}}'
     // en: 'Dependency failed - key must exist: {missing} (due to key: {key})',
@@ -400,7 +400,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не более, чем {{=n}} пол{{#def.propPlural}}',
     sk: '{{#def.n}}nesmie obsahovať viac než {{=n}} polož{{#def.propPlural}}',
     sv: '{{#def.n}}borde inte ha fler än {{=n}} egenskap{{#def.propPlural}}',
-    th: '{{#def.n}}ไม่ควรมี property เกิน {{=n}}',
+    th: '{{#def.n}}ไม่ควรมี สมาชิกเกิน {{=n}}',
     zh: '{{#def.n}}不应有多于 {{=n}} 个属性',
     'zh-TW': '{{#def.n}}不應該多於 {{=n}} 個屬性'
     // en: 'Too many properties defined ({propertyCount}), maximum {maximum}',
@@ -424,7 +424,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не менее, чем {{=n}} пол{{#def.propPlural}}',
     sk: '{{#def.n}}nesmie obsahovať menej než {{=n}} polož{{#def.propPlural}}',
     sv: '{{#def.n}}borde inte ha färre än {{=n}} egenskap{{#def.propPlural}}',
-    th: '{{#def.n}}ไม่ควรมี property น้อยกว่า {{=n}}',
+    th: '{{#def.n}}ไม่ควรมี สมาชิกน้อยกว่า {{=n}}',
     zh: '{{#def.n}}不应有少于 {{=n}} 个属性',
     'zh-TW': '{{#def.n}}不應該少於 {{=n}} 個屬性'
     // en: 'Too few properties defined ({propertyCount}), minimum {minimum}',
@@ -472,7 +472,7 @@ module.exports = {
     ru: 'должно не соответствовать схеме в "not"',
     sk: 'nesmie splňovať schému v "not"',
     sv: 'borde inte vara giltigt enligt schema i "not"',
-    th: 'ไม่ควรถูกต้องตาม schema ที่กำหนดไว้ใน "not"',
+    th: 'ไม่ควรเลือกสิ่งที่ "ห้าม"',
     zh: '不应当匹配 "not" schema',
     'zh-TW': '不應該符合 "not" schema'
     // en: 'Data matches schema from "not"',
@@ -496,7 +496,7 @@ module.exports = {
     ru: 'должно соответствовать в точности одной схемe в "oneOf"',
     sk: 'musí splňovať práve jednu schému v "oneOf"',
     sv: 'borde matcha exakt ett schema i "oneOf"',
-    th: 'ควรตรงกับเพียง schema เดียวใน "oneOf" เท่านั้น',
+    th: 'ควรตรงกันเพียงอย่างเดียว "หนึ่งในนี้" เท่านั้น',
     zh: '只能匹配一个 "oneOf" 中的 schema',
     'zh-TW': '只能符合一個 "oneOf" 中的 schema'
     // en: 'Data does not match any schemas from "oneOf"',
@@ -520,7 +520,7 @@ module.exports = {
     ru: 'должно соответствовать образцу "{{=e.params.pattern}}"',
     sk: 'musí splňovať regulárny výraz "{{=e.params.pattern}}"',
     sv: 'borde matcha mönstret "{{=e.params.pattern}}"',
-    th: 'ควรตรงกับแพทเทิร์น "{{=e.params.pattern}}"',
+    th: 'ควรตรงกับ "{{=e.params.pattern}}"',
     zh: '应当匹配模式 "{{=e.params.pattern}}"',
     'zh-TW': '應該符合模式 "{{=e.params.pattern}}"'
     // en: 'String does not match pattern: {pattern}',
@@ -544,7 +544,7 @@ module.exports = {
     ru: 'должно иметь обязательное поле {{=e.params.missingProperty}}',
     sk: 'musí obsahovať požadovanú položku {{=e.params.missingProperty}}',
     sv: 'borde ha den nödvändiga egenskapen {{=e.params.missingProperty}}',
-    th: 'ควรมี property {{=e.params.missingProperty}} ที่บังคับไว้',
+    th: 'ควรระบุ {{=e.params.missingProperty}}',
     zh: '应当有必需属性 {{=e.params.missingProperty}}',
     'zh-TW': '應該有必須屬性 {{=e.params.missingProperty}}'
     // en: 'Missing required property: {key}',
@@ -633,7 +633,7 @@ module.exports = {
     ru: 'имя поля \'{{=e.params.propertyName}}\' не соответствует схеме',
     sk: 'názov položky \'{{=e.params.propertyName}}\' nezodpovedá schéme',
     sv: 'egenskap med namnet \'{{=e.params.propertyName}}\' är inte giltig',
-    th: 'property \'{{=e.params.propertyName}}\' ไม่ถูกต้อง',
+    th: '\'{{=e.params.propertyName}}\' ไม่ถูกต้อง',
     zh: '属性名 \'{{=e.params.propertyName}}\' 无效',
     'zh-TW': '属性名 \'{{=e.params.propertyName}}\' 無效',
   },
@@ -652,7 +652,7 @@ module.exports = {
     ru: 'должно иметь поле, соответствующее образцу "{{=e.params.missingPattern}}"',
     sk: 'musí obsahovať položku splňjúcu regulárny výraz "{{=e.params.missingPattern}}"',
     sv: 'bör ha en egenskap som matchar mönstret "{{=e.params.missingPattern}}"',
-    th: 'ควรมี property ที่มีชื่อตรงกับ pattern "{{=e.params.missingPattern}}"',
+    th: 'ควรมีชื่อตรงกับ "{{=e.params.missingPattern}}"',
     zh: '应当有属性匹配模式 {{=e.params.missingPattern}}',
     'zh-TW': '應該有屬性對應模式 {{=e.params.missingPattern}}'
   },
@@ -671,7 +671,7 @@ module.exports = {
     ru: 'должно соответствовать правилу {{=e.params.caseIndex}} в "switch"',
     sk: 'musí prejsť validáciou "switch", prípad {{=e.params.caseIndex}} je neúspešný',
     sv: 'bör passera "switch" nyckelord validering, fallet {{=e.params.caseIndex}} misslyckas',
-    th: 'ควรผ่านคีย์เวิร์ด "switch", ผิดเคสที่ {{=e.params.caseIndex}}',
+    th: 'ควรผ่าน "เงื่อนไข", ผิดเงื่อนไขที่ {{=e.params.caseIndex}}',
     zh: '由于 {{=e.params.caseIndex}} 失败，未通过 "switch" 校验, ',
     'zh-TW': '因為 {{=e.params.caseIndex}} 失败，沒有通過 "switch" 檢驗, '
   },
@@ -706,7 +706,7 @@ module.exports = {
     ru: 'должно содержать значение соответствующее схеме',
     sk: 'musí obsahovať prvok zodpovedajúci schéme',
     sv: 'bör innehålla ett giltigt objekt',
-    th: 'ควรมีสมาชิกที่ถูกต้องอยู่',
+    th: 'ควรมีสมาชิกที่ถูกต้อง',
     zh: '应当包含一个有效项',
     'zh-TW': '應該包含一個有效元素'
   },
@@ -769,7 +769,7 @@ module.exports = {
     ru: 'formatExclusiveMaximum должно быть boolean',
     sk: 'formatExclusiveMaximum musí byť boolean',
     sv: 'formatExclusiveMaximum bör vara en boolean',
-    th: 'formatExclusiveMaximum ควรเป็น boolean',
+    th: 'ควรเป็น boolean',
     zh: 'formatExclusiveMaximum 应当是布尔值',
     'zh-TW': 'formatExclusiveMaximum 應該是布林值'
   },
@@ -788,7 +788,7 @@ module.exports = {
     ru: 'formatExclusiveMinimum должно быть boolean',
     sk: 'formatExclusiveMinimum musí byť boolean',
     sv: 'formatExclusiveMaximum bör vara en boolean',
-    th: 'formatExclusiveMinimum ควรเป็น boolean',
+    th: 'ควรเป็น boolean',
     zh: 'formatExclusiveMinimum 应当是布尔值',
     'zh-TW': 'formatExclusiveMinimum 應該是布林值'
   },
@@ -798,7 +798,7 @@ module.exports = {
     it: 'deve corrispondere allo schema "{{=e.params.failingKeyword}}"',
     nl: 'moet overeenkomen met "{{=e.params.failingKeyword}}" schema',
     ru: 'должно соответствовать схемe "{{=e.params.failingKeyword}}"',
-    th: 'ควรตรงกับ schema "{{=e.params.failingKeyword}}"',
+    th: 'ควรตรงกับ "{{=e.params.failingKeyword}}"',
     zh: '应当匹配模式 "{{=e.params.failingKeyword}}" ',
     'zh-TW': '應該符合 "{{=e.params.failingKeyword}}" schema'
   }
