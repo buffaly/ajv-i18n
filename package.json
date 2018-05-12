@@ -40,13 +40,15 @@
     "url": "https://github.com/epoberezkin/ajv-i18n/issues"
   },
   "homepage": "https://github.com/epoberezkin/ajv-i18n#readme",
+  "dependencies": {
+    "dot": "^1.0.3"
+  },
   "devDependencies": {
     "ajv": "^6.0.0",
     "ajv-keywords": "^3.0.0",
     "brfs": "^1.4.3",
     "browserify": "^16.0.0",
     "coveralls": "^3.0.0",
-    "dot": "^1.0.3",
     "eslint": "^4.15.0",
     "js-beautify": "^1.7.4",
     "json-schema-test": "^2.0.0",
