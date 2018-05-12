@@ -21,7 +21,7 @@
     "test-spec": "mocha spec/*.spec.js -R spec",
     "test-cov": "nyc npm run test-spec",
     "test-browser": "npm run bundle-test && scripts/prepare-tests && karma start --single-run --browsers PhantomJS",
-    "install": "yarn run build"
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
