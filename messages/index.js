@@ -103,7 +103,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не более, чем {{=n}} элемент{{#def.mPlural}}',
     sk: '{{#def.n}}nemôže obsahovať viac, než {{=n}} prv{{#def.mPlural}}',
     sv: '{{#def.n}}borde ha fler än {{=n}} sak{{#def.mPlural}}',
-    th: '{{#def.n}}ควรมีสมาชิกไม่เกิน {{=n}}',
+    th: 'ไม่สามารถเลือก{{#def.n}}เกิน {{=n}} ได้',
     zh: '{{#def.n}}不允许超过{{=n}}个元素',
     'zh-TW': '{{#def.n}}不可以超過{{=n}}個元素'
     // en: 'Additional items not allowed',
@@ -127,7 +127,7 @@ module.exports = {
     ru: 'не должно иметь дополнительные поля',
     sk: 'nemôže obsahovať ďalšie položky',
     sv: 'borde inte ha fler egenskaper',
-    th: 'ไม่ควรเลือกเกินกว่าที่กำหนดไว้',
+    th: 'ไม่สามารถเลือกเกินกว่าที่กำหนดไว้',
     zh: '不允许有额外的属性',
     'zh-TW': '不可以有額外的屬性'
     // en: 'Additional properties not allowed',
@@ -151,7 +151,7 @@ module.exports = {
     ru: 'должно соответствовать одной их схем в "anyOf"',
     sk: 'musí splňovať aspoň jednu zo schém v "anyOf"',
     sv: 'borde matcha något schema i "anyOf"',
-    th: 'ควรมีบางอย่างตรงกับที่กำหนดไว้ "อย่างใดอย่างหนึ่ง"',
+    th: 'กรุณาเลือกตัวเลือกที่่กำหนดไว้ "อย่างใดอย่างหนึ่ง"',
     zh: '数据应为 anyOf 所指定的其中一个',
     'zh-TW': '不符合 anyOf 指定的模式'
     // en: 'Data does not match any schemas from "anyOf"',
@@ -178,7 +178,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь пол{{? n==1 }}е{{??}}я{{?}} {{=e.params.deps}}, когда присутствует поле {{=e.params.property}}',
     sk: '{{#def.n}} musí obsahovať polož{{#def.propPlural}}: {{=e.params.deps}}, ak obsahuje {{=e.params.property}}',
     sv: '{{#def.n}}borde ha egenskap{{#def.propPlural}} {{=e.params.deps}} när egenskap {{=e.params.property}} finns tillgängligt',
-    th: '{{#def.n}}เมื่อมี {{=e.params.property}} แล้วก็ควรมี {{=e.params.deps}} ด้วย',
+    th: 'ใน {{#def.n}} กรุณาระบุ{{=e.params.deps}} เมื่อเลือก {{=e.params.property}}',
     zh: '{{#def.n}}应当拥有属性{{=e.params.property}}的依赖属性{{=e.params.deps}}',
     'zh-TW': '{{#def.n}}應該要有屬性{{=e.params.property}}的依賴屬性{{=e.params.deps}}'
     // en: 'Dependency failed - key must exist: {missing} (due to key: {key})',
@@ -202,7 +202,7 @@ module.exports = {
     ru: 'должно быть равен одному из значений в "enum"',
     sk: 'musí byť jedna z definovaných hodnôt',
     sv: 'borde vara ekvivalent med en av dess fördefinierade värden',
-    th: 'ควรตรงกับค่าที่กำหนดไว้',
+    th: 'ข้อมูลที่ระบุไม่ตรงกับที่กำหนดไว้',
     zh: '应当是预设定的枚举值之一',
     'zh-TW': '應該要在預設的值之中'
     // en: 'No enum match for: {value}',
@@ -226,7 +226,7 @@ module.exports = {
     ru: 'должно соответствовать формату "{{=e.params.format}}"',
     sk: 'musí obsahovať formát "{{=e.params.format}}"',
     sv: 'borde matcha formatet "{{=e.params.format}}"',
-    th: 'ควรมีรูปแบบเป็น "{{=e.params.format}}"',
+    th: 'กรุณากรอกข้อมูลให้ถูกต้อง "{{=e.params.format}}"',
     zh: '应当匹配格式 "{{=e.params.format}}"',
     'zh-TW': '應該要符合{{=e.params.format}}格式'
     // en: 'Format validation failed ({message})',
@@ -253,7 +253,7 @@ module.exports = {
     ru: '{{#def.c}}должно быть {{=cond}}',
     sk: '{{#def.c}}musí byť {{=cond}}',
     sv: '{{#def.c}}borde vara {{=cond}}',
-    th: '{{#def.c}}ควร {{=cond}}',
+    th: '{{#def.c}}ต้อง {{=cond}}',
     zh: '{{#def.c}}应当为 {{=cond}}',
     'zh-TW': '{{#def.c}}應該要 {{=cond}}'
     // en: 'Value {value} is greater than maximum {maximum}',
@@ -280,7 +280,7 @@ module.exports = {
     ru: '{{#def.c}}должно быть {{=cond}}',
     sk: '{{#def.c}}musí byť {{=cond}}',
     sv: '{{#def.c}}borde vara {{=cond}}',
-    th: '{{#def.c}}ควร {{=cond}}',
+    th: '{{#def.c}}ต้อง {{=cond}}',
     zh: '{{#def.c}}应当为 {{=cond}}',
     'zh-TW': '{{#def.c}}應該要 {{=cond}}'
     // en: 'Value {value} is less than minimum {minimum}',
@@ -304,7 +304,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не более, чем {{=n}} элемент{{#def.mPlural}}',
     sk: '{{#def.n}}nesmie obsahovať viac než {{=n}} prv{{#def.mPlural}}',
     sv: '{{#def.n}}borde inte ha fler än {{=n}} sak{{#def.mPlural}}',
-    th: '{{#def.n}}ควรมีสมาชิกไม่เกิน {{=n}}',
+    th: 'เลือก {{#def.n}} ได้ไม่เกิน {{=n}} ตัวเลือก',
     zh: '{{#def.n}}不应多于 {{=n}} 个项',
     'zh-TW': '{{#def.n}}不應該多於 {{=n}} 個'
     // en: 'Array is too long ({length}), maximum {maximum}',
@@ -328,7 +328,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не менее, чем {{=n}} элемент{{#def.mPlural}}',
     sk: '{{#def.n}}nesmie obsahovať menej než {{=n}} prv{{#def.mPlural}}',
     sv: '{{#def.n}}borde inte ha färre än {{=n}} sak{{#def.mPlural}}',
-    th: '{{#def.n}}ควรมีสมาชิกไม่น้อยกว่า {{=n}}',
+    th: 'ต้องเลือก {{#def.n}} อย่างน้อย {{=n}} ตัวเลือก',
     zh: '{{#def.n}}不应少于 {{=n}} 个项',
     'zh-TW': '{{#def.n}}不應該少於 {{=n}} 個'
     // en: 'Array is too short ({length}), minimum {minimum}',
@@ -352,7 +352,7 @@ module.exports = {
     ru: '{{#def.n}}должно быть не длиннее, чем {{=n}} символ{{#def.mPlural}}',
     sk: '{{#def.n}}nesmie byť dlhší než {{=n}} znak{{? n!=1 }}ov{{?}}',
     sv: '{{#def.n}}borde inte vara längre än {{=n}} tecken',
-    th: '{{#def.n}}ไม่ควรมากกว่า {{=n}} ตัวอักษร',
+    th: '{{#def.n}} ต้องมีความยาวไม่เกิน {{=n}} ตัวอักษร',
     zh: '{{#def.n}}不应多于 {{=n}} 个字符',
     'zh-TW': '{{#def.n}}不應該多於 {{=n}} 個字元'
     // en: 'String is too long ({length} chars), maximum {maximum}',
@@ -376,7 +376,7 @@ module.exports = {
     ru: '{{#def.n}}должно быть не короче, чем {{=n}} символ{{#def.mPlural}}',
     sk: '{{#def.n}}nesmie byť kratší než {{=n}} znak{{? n!=1 }}ov{{?}}',
     sv: '{{#def.n}}borde inte vara kortare än {{=n}} tecken',
-    th: '{{#def.n}}ไม่ควรน้อยกว่า {{=n}} ตัวอักษร',
+    th: '{{#def.n}} ต้องมีความยาวมากกว่า {{=n}} ตัวอักษร',
     zh: '{{#def.n}}不应少于 {{=n}} 个字符',
     'zh-TW': '{{#def.n}}不應該少於 {{=n}} 個字元'
     // en: 'String is too short ({length} chars), minimum {minimum}',
@@ -400,7 +400,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не более, чем {{=n}} пол{{#def.propPlural}}',
     sk: '{{#def.n}}nesmie obsahovať viac než {{=n}} polož{{#def.propPlural}}',
     sv: '{{#def.n}}borde inte ha fler än {{=n}} egenskap{{#def.propPlural}}',
-    th: '{{#def.n}}ไม่ควรมี สมาชิกเกิน {{=n}}',
+    th: 'ไม่สามารถเลือก {{#def.n}} เกิน {{=n}} ตัวเลือก',
     zh: '{{#def.n}}不应有多于 {{=n}} 个属性',
     'zh-TW': '{{#def.n}}不應該多於 {{=n}} 個屬性'
     // en: 'Too many properties defined ({propertyCount}), maximum {maximum}',
@@ -424,7 +424,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не менее, чем {{=n}} пол{{#def.propPlural}}',
     sk: '{{#def.n}}nesmie obsahovať menej než {{=n}} polož{{#def.propPlural}}',
     sv: '{{#def.n}}borde inte ha färre än {{=n}} egenskap{{#def.propPlural}}',
-    th: '{{#def.n}}ไม่ควรมี สมาชิกน้อยกว่า {{=n}}',
+    th: 'กรุณาเลือก {{#def.n}} ให้ครบทั้ง {{=n}} ตัวเลือก',
     zh: '{{#def.n}}不应有少于 {{=n}} 个属性',
     'zh-TW': '{{#def.n}}不應該少於 {{=n}} 個屬性'
     // en: 'Too few properties defined ({propertyCount}), minimum {minimum}',
@@ -496,7 +496,7 @@ module.exports = {
     ru: 'должно соответствовать в точности одной схемe в "oneOf"',
     sk: 'musí splňovať práve jednu schému v "oneOf"',
     sv: 'borde matcha exakt ett schema i "oneOf"',
-    th: 'ควรตรงกันเพียงอย่างเดียว "หนึ่งในนี้" เท่านั้น',
+    th: 'กรุณาเลือกตัวเลือกใดตัวเลือกหนึ่งที่กำหนดไว้ให้เท่านั้น',
     zh: '只能匹配一个 "oneOf" 中的 schema',
     'zh-TW': '只能符合一個 "oneOf" 中的 schema'
     // en: 'Data does not match any schemas from "oneOf"',
@@ -520,7 +520,7 @@ module.exports = {
     ru: 'должно соответствовать образцу "{{=e.params.pattern}}"',
     sk: 'musí splňovať regulárny výraz "{{=e.params.pattern}}"',
     sv: 'borde matcha mönstret "{{=e.params.pattern}}"',
-    th: 'ควรตรงกับ "{{=e.params.pattern}}"',
+    th: 'กรุณาระบุข้อมูลให้ถูกต้อง "{{=e.params.pattern}}"',
     zh: '应当匹配模式 "{{=e.params.pattern}}"',
     'zh-TW': '應該符合模式 "{{=e.params.pattern}}"'
     // en: 'String does not match pattern: {pattern}',
@@ -544,7 +544,7 @@ module.exports = {
     ru: 'должно иметь обязательное поле {{=e.params.missingProperty}}',
     sk: 'musí obsahovať požadovanú položku {{=e.params.missingProperty}}',
     sv: 'borde ha den nödvändiga egenskapen {{=e.params.missingProperty}}',
-    th: 'ควรระบุ {{=e.params.missingProperty}}',
+    th: 'กรุณาระบุ {{=e.params.missingProperty}}',
     zh: '应当有必需属性 {{=e.params.missingProperty}}',
     'zh-TW': '應該有必須屬性 {{=e.params.missingProperty}}'
     // en: 'Missing required property: {key}',
@@ -571,7 +571,7 @@ module.exports = {
     ru: 'должно быть {{=e.params.type}}',
     sk: 'musí byť {{=e.params.type}}',
     sv: 'borde vara {{=e.params.type}}',
-    th: 'ควรเป็น {{=e.params.type}}',
+    th: 'กรุณากรอกเป็น{{=e.params.type}}',
     zh: '应当是 {{=e.params.type}} 类型',
     'zh-TW': '應該是 {{=e.params.type}} 類型'
     // en: 'Invalid type: {type} (expected {expected})',
@@ -617,7 +617,7 @@ module.exports = {
     ru: 'должно соответствовать правилу "{{=e.keyword}}"',
     sk: 'musí splniť "{{=e.keyword}}" validáciu',
     sv: 'bör passera "{{=e.keyword}}" nyckelord validering',
-    th: 'ควรผ่านคีย์เวิร์ด "{{=e.keyword}}"',
+    th: 'กรุณาใส่ "{{=e.keyword}}"',
     zh: '应当通过 "{{=e.keyword}} 关键词校验"',
     'zh-TW': '應該通過 "{{=e.keyword}} 關鍵詞檢驗"'
   },
@@ -652,7 +652,7 @@ module.exports = {
     ru: 'должно иметь поле, соответствующее образцу "{{=e.params.missingPattern}}"',
     sk: 'musí obsahovať položku splňjúcu regulárny výraz "{{=e.params.missingPattern}}"',
     sv: 'bör ha en egenskap som matchar mönstret "{{=e.params.missingPattern}}"',
-    th: 'ควรมีชื่อตรงกับ "{{=e.params.missingPattern}}"',
+    th: 'กรุณากรอกข้อมูลให้ตรงกับ "{{=e.params.missingPattern}}"',
     zh: '应当有属性匹配模式 {{=e.params.missingPattern}}',
     'zh-TW': '應該有屬性對應模式 {{=e.params.missingPattern}}'
   },
@@ -728,7 +728,7 @@ module.exports = {
     ru: '{{#def.c}}должно быть {{=cond}}',
     sk: '{{#def.c}}musí byť {{=cond}}',
     sv: '{{#def.c}}bör vara {{=cond}}',
-    th: '{{#def.c}}ควร {{=cond}}',
+    th: '{{#def.c}}ต้อง {{=cond}}',
     zh: '{{#def.c}}应当是 {{=cond}}',
     'zh-TW': '{{#def.c}}應該是 {{=cond}}'
   },
@@ -750,7 +750,7 @@ module.exports = {
     ru: '{{#def.c}}должно быть {{=cond}}',
     sk: '{{#def.c}}musí byť {{=cond}}',
     sv: '{{#def.c}}bör vara {{=cond}}',
-    th: '{{#def.c}}ควร {{=cond}}',
+    th: '{{#def.c}}ต้อง {{=cond}}',
     zh: '{{#def.c}}应当是 {{=cond}}',
     'zh-TW': '{{#def.c}}應該是 {{=cond}}'
   },
@@ -798,7 +798,7 @@ module.exports = {
     it: 'deve corrispondere allo schema "{{=e.params.failingKeyword}}"',
     nl: 'moet overeenkomen met "{{=e.params.failingKeyword}}" schema',
     ru: 'должно соответствовать схемe "{{=e.params.failingKeyword}}"',
-    th: 'ควรตรงกับ "{{=e.params.failingKeyword}}"',
+    th: 'ข้อมูลที่กรอก ต้องตรงกันกับ "{{=e.params.failingKeyword}}"',
     zh: '应当匹配模式 "{{=e.params.failingKeyword}}" ',
     'zh-TW': '應該符合 "{{=e.params.failingKeyword}}" schema'
   }
