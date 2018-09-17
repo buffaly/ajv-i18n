@@ -328,7 +328,7 @@ module.exports = {
     ru: '{{#def.n}}должно иметь не менее, чем {{=n}} элемент{{#def.mPlural}}',
     sk: '{{#def.n}}nesmie obsahovať menej než {{=n}} prv{{#def.mPlural}}',
     sv: '{{#def.n}}borde inte ha färre än {{=n}} sak{{#def.mPlural}}',
-    th: 'ต้องเลือก {{#def.n}} อย่างน้อย {{=n}} ตัวเลือก',
+    th: 'ต้องเลือก {{#def.n}}อย่างน้อย {{=n}} ตัวเลือก',
     zh: '{{#def.n}}不应少于 {{=n}} 个项',
     'zh-TW': '{{#def.n}}不應該少於 {{=n}} 個'
     // en: 'Array is too short ({length}), minimum {minimum}',
